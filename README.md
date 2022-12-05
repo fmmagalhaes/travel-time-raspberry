@@ -8,7 +8,7 @@ This repository aims at providing periodic information about the duration of a c
 
 The communication with the LCD was done through the interfacing made available by [The Raspberry Pi Guy](https://github.com/the-raspberry-pi-guy/lcd).
 
-The travel information comes from [TomTom Routing API](https://developer.tomtom.com/routing-api/api-explorer)
+The travel information comes from [TomTom Routing API](https://developer.tomtom.com/routing-api/api-explorer).
 
 ## Setup
 
@@ -19,7 +19,7 @@ The travel information comes from [TomTom Routing API](https://developer.tomtom.
 
 ### Run in the console
 To run this in the console, simply run  
-```python console_random_country.py```
+```python travel_time.py```
 
 ### Run on Raspberry Pi
 1. Follow this installation guide to setup the drivers for the LCD communication  
@@ -32,6 +32,3 @@ https://github.com/the-raspberry-pi-guy/lcd#Installation
 4. Run ```python lcd_travel_time.py```
 
 Updated travel times will now be shown in your lcd every 10 minutes. Make the necessary adjustments to edit the periodicity at your own will.
-
-### Run on command line
-Run ```python travel_time.py```, which does not rely on the lcd.
