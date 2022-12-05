@@ -21,11 +21,11 @@ def safe_display_times():
 	retries = 0
 	while retries < 10:
 		try:
-				display_times()
-				return
+			display_times()
+			return
 		except (requests.ConnectionError, requests.Timeout):
-				print("Couldn't get response.")
-				print("----------------")
+			print("Couldn't get response.")
+			print("----------------")
 
 		retries+=1
 		time.sleep(5)
@@ -38,9 +38,9 @@ try:
 	schedule.every(10).minutes.do(safe_display_times)
 
 	while True:
-			schedule.run_pending()
-			time.sleep(60)
+		schedule.run_pending()
+		time.sleep(60)
 
 except KeyboardInterrupt:
-		print("Cleaning up!")
-		display.lcd_clear()
+	print("Cleaning up!")
+	display.lcd_clear()
