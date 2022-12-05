@@ -7,8 +7,8 @@ import sys
 BASE_URL = "https://api.tomtom.com/routing/1/calculateRoute/"
 
 class TravelInfo:
-    def __init__(self, travel_data):
-        self.travelTimeInMinutes = round(travel_data.get("routes")[0].get("summary").get("travelTimeInSeconds") / 60)
+	def __init__(self, travel_data):
+			self.travelTimeInMinutes = round(travel_data.get("routes")[0].get("summary").get("travelTimeInSeconds") / 60)
 
 class Config:
 	def __init__(self, json):
