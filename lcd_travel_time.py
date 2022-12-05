@@ -8,14 +8,14 @@ from travel_time import get_travel_times
 display = drivers.Lcd()
 
 def display_times():
-	times = get_travel_times()
-	display.lcd_clear()
-	line = 1
-	for time in times:
-		print(time)
-		display.lcd_display_string(time, line)
-		line += 1
-	print("----------------")
+    times = get_travel_times()
+    display.lcd_clear()
+    line = 1
+    for time in times:
+        print(time)
+        display.lcd_display_string(time, line)
+        line += 1
+    print("----------------")
 
 def safe_display_times():
     retries = 0
