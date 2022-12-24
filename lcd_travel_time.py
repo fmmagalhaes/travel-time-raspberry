@@ -7,6 +7,7 @@ from travel_time import get_travel_times
 
 display = drivers.Lcd()
 
+
 def display_times():
     times = get_travel_times()
     display.lcd_clear()
@@ -16,6 +17,7 @@ def display_times():
         display.lcd_display_string(time, line)
         line += 1
     print("----------------")
+
 
 def safe_display_times():
     retries = 0
@@ -27,10 +29,11 @@ def safe_display_times():
             print("Couldn't get response.")
             print("----------------")
 
-        retries+=1
+        retries += 1
         time.sleep(5)
 
     display.lcd_display_string("Failed to connect.", 1)
+
 
 try:
     safe_display_times()

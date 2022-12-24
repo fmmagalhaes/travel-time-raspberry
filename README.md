@@ -19,7 +19,7 @@ The travel information comes from [TomTom Routing API](https://developer.tomtom.
 
 ### Run in the console
 To run this in the console, simply run  
-```python travel_time.py```
+```python console_travel_time.py```
 
 ### Run on Raspberry Pi
 1. Follow this installation guide to setup the drivers for the LCD communication  
